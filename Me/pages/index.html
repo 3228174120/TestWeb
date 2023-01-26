@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>个人网页</title>
+  </head>
+  <body>
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="baiSe yinYing ceBlan">
+      <!-- 头像栏 -->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+          height: 60px;
+        "
+        class="flex"
+      >
+        <img src="../images/me.jpg" width="40px" height="40px" class="tx" />
+        <span
+          style="margin-left: 10px; cursor: pointer"
+          onclick="alert('欢迎欢迎~')"
+          >你好</span
+        >
+        <i
+          style="padding: 5px; cursor: pointer"
+          class="fa-solid fa-caret-down"
+          onclick="alert('欢迎欢迎~')"
+        ></i>
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <!--  -->
+        <div class="daoHangLan">
+          <i class="fa-solid fa-bars"></i>
+          导航
+        </div>
+        <!--  -->
+        <div class="daoHang">
+          <i class="fa-solid fa-house"></i>
+          <a href="http://127.0.0.1:3000/pages/index.html">首页</a>
+        </div>
+        <div class="daoHang">
+          <i class="fa-brands fa-instagram"></i>
+          时光机
+        </div>
+        <div class="daoHang">
+          <i class="fa-solid fa-pen"></i>
+          留言板
+        </div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+      </div>
+    </div>
+    <!-- 主内容 -->
+    <div class="flex1 flex column neiRong">
+      <!-- 头部栏 -->
+      <div style="height: 80px; z-index: 1" class="baiSe yinYing">
+        <p id="hitokoto" class="flex yuYan yiYan">
+          <a href="#" id="hitokoto_text">:D 获取中...</a>
+        </p>
+      </div>
+      <!-- 内容区 -->
+      <div style="overflow: auto" class="flex1 flex neiRongQu">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex shuJuQu">
+            <!-- 数据块 -->
+            <div
+              style="height: 100px"
+              class="shuJu flex1 baiSe mgr8 yinYing"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJu flex1 baiSe mgr8 yinYing"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuJu flex1 baiSe mgr8 yinYing"
+            ></div>
+            <div style="height: 100px" class="shuJu flex1 baiSe yinYing"></div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex column">
+            <!-- 列表项 -->
+            <div style="height: 160px" class="baiSe mgt8 yinYing">
+              <img src="../images/tp.png" alt="一言和图标的引用" class="tplj" />
+            </div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="flex column mgr8 mgt8 youQu">
+          <!-- 提示区 -->
+          <div style="height: 150px" class="baiSe yinYing"></div>
+          <!-- 消息区 -->
+          <div style="height: 300px" class="baiSe mgt8 yinYing"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto"
+      defer
+    ></script>
+  </body>
+</html>
